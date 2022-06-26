@@ -9,7 +9,7 @@
     separatorcolor:              var(foreground);
     urgent-foreground:           var(red);
     alternate-urgent-background: var(lightbg);
-    lightbg:                     rgba ( 194, 208, 231, 100 % );
+    lightbg:                     rgba (216, 222, 233, 100 % );
     background-color:            transparent;
     border-color:                var(foreground);
     normal-background:           var(background);
@@ -132,16 +132,16 @@ button selected {
 }
 num-filtered-rows {
     expand:     false;
-    text-color: Gray;
+    text-color: #60728c;
 }
 num-rows {
     expand:     false;
-    text-color: Gray;
+    text-color: #60728c;
 }
 textbox-num-sep {
     expand:     false;
     str:        "/";
-    text-color: Gray;
+    text-color: #60728c;
 }
 inputbar {
     padding:    1px ;
@@ -157,7 +157,7 @@ entry {
     text-color:        var(normal-foreground);
     cursor:            text;
     spacing:           0;
-    placeholder-color: Gray;
+    placeholder-color: #60728c;
     placeholder:       "Type to filter";
 }
 prompt {
