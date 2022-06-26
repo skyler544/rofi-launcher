@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# relies on fd to find files in
+# the directories of your choosing
+if [[ -z "$1" ]]; then
+    fd . $HOME/.config/openbox ;
+    fd . $HOME/.config/kitty ;
+    fd . $HOME/.config/zsh ;
+    fd . $HOME/mega
+else
+    xdg-open "$1" > /dev/null 2>&1 &
+fi

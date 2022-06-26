@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+# if the window already exists, then close it.
+# the idea is that you can bind it to a single
+# key that will work as a toggle.
+ID=$(xdotool search --classname rofi)
+
+if [[ $ID ]]
+then
+    xdotool windowclose $ID
+else
+    # the path to the search script is hard-coded for now
+    rofi -normal-window -show combi -combi-modi run,files:~/.config/rofi/find-in-home
+fi
