@@ -1,3 +1,7 @@
 configuration {
+kb-accept-entry: "Return";
+kb-remove-to-eol: "";
+kb-row-up: "Up,Control+k";
+kb-row-down: "Down,Control+j";
 }
 @theme "snow-storm"
